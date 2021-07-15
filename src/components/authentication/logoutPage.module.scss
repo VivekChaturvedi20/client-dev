@@ -1,0 +1,15 @@
+.logout-card {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 30rem !important;
+
+    &-icon {
+        font-size: 1rem; 
+        margin-right: 10px 
+    }
+    &-action-button {
+        float: right;
+    }
+}

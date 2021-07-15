@@ -1,0 +1,12 @@
+.vscode
+node_modules
+.DS_Store
+dist
+dist-ssr
+distApiServer
+*.local
+*.iml
+.eslintcache
+*.code-workspace
+coverage
+.vs

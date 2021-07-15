@@ -1,0 +1,104 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "react-hooks",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "js": "never",
+                "jsx": "never",
+                "ts": "never",
+                "tsx": "never"
+            }
+        ],
+        "no-use-before-define": "off",
+        "@typescript-eslint/no-use-before-define": [
+            "error"
+        ],
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    "tsx"
+                ]
+            }
+        ],
+        "indent": [ "error", 4 ],
+        "react/jsx-indent": [ "error", 4 ],
+        "react/jsx-indent-props": [ "error", 4 ],
+        "comma-dangle": [ "error", "never" ],
+        "import/no-extraneous-dependencies": [
+            "error",
+            { "devDependencies": true }
+        ],
+        "no-console": "off",
+        "prefer-destructuring": [
+            "error",
+            {
+                "array": false,
+                "object": false
+            },
+            {
+                "enforceForRenamedProperties": false
+            }
+        ],
+        "react/destructuring-assignment": [ "error", "never" ],
+        "import/prefer-default-export": "off",
+        "lines-between-class-members": "off",
+        "no-plusplus": [
+            "error",
+            { "allowForLoopAfterthoughts": true }
+        ],
+        "max-len": [ "error", 200 ],
+        "react/jsx-props-no-spreading": [ 0 ],
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
+        "linebreak-style": 0
+    },
+    "settings": {
+        "import/extensions": [
+            ".js",
+            ".jsx",
+            ".ts",
+            ".tsx",
+            ".json"
+        ],
+        "import/parsers": {
+            "@typescript-eslint/parser": [
+                ".ts",
+                ".tsx"
+            ]
+        },
+        "import/resolver": {
+            "node": {
+                "extensions": [
+                    ".js",
+                    ".jsx",
+                    ".ts",
+                    ".tsx",
+                    ".json"
+                ]
+            }
+        }
+    }
+}

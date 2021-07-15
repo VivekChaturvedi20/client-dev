@@ -1,0 +1,87 @@
+{
+    "application": {
+        "title": "Client Administration",
+        "copyright": "© 2021 Korn Ferry. All rights reserved.",
+        "buttons": {
+            "cancel": "Cancel",
+            "export": "Export",
+            "save": "Save",
+            "logout": "Sign Out"
+        }
+    },
+    "clientAdmin": {
+        "loading": "Please wait...",
+        "alerts": {
+            "clientCreated": "Client created",
+            "clientUpdated": "Client updated",
+            "pairingTokenUpdated": "Pairing token updated",
+            "pairingTokenCopied": "Pairing token copied to clipboard"
+        },
+        "labels": {
+            "clientName": "Client Name",
+            "contractStartDate": "Contract Start Date",
+            "contractEndDate": "Contract End Date",
+            "clientStatus": "Status",
+            "active": "Active",
+            "pairingToken": "Pairing Token",
+            "updatePairingTokenButton": "Update Pairing Token",
+            "copyPairingTokenButton": "Copy Token"
+        },
+        "validationErrors": {
+            "required": "Required",
+            "contractStartLaterThanEnd": "Contract start date is the same or later than the end date",
+            "idRequired": "id is required",
+            "nameRequired": "name is required",
+            "contractStartRequired": "contractStart is required",
+            "contractEndRequired": "contractEnd is required",
+            "activeRequired": "active is required",
+            "userExtRefRequired": "userExtRef is required"
+        },
+        "clientList": {
+            "title": "Clients",
+            "buttons": {
+                "createClient": "Create Client"
+            }
+        },
+        "createClient": {
+            "title": "Client Information"
+        },
+        "updateClient": {
+            "title": "Update Client Information"
+        }
+
+    },
+    "authorization": {
+        "inProgress": "Authentication in progress...",
+        "errorHeader": "An Error Occurred:",
+        "unknownError": "Unknown error.",
+        "unauthorizedPage": {
+            "header": "Unauthorized",
+            "title": "401",
+            "text": "Access is denied due to invalid credentials.",
+            "buttons": {
+                "retry": "Login"
+            }
+        }
+    },
+    "modals": {
+        "errorModal": {
+            "header": "Error",
+            "toggleDetails": {
+                "showMoreLabel": "see more",
+                "showLessLabel": "see less"
+            },
+            "buttons": {
+                "ok": "OK"
+            }
+        }
+    },
+    "logoutPage": {
+        "header": "All done!",
+        "title": "You are now successfully logged out.",
+        "text": "Use Login button below if you need to get back to the system.",
+        "buttons": {
+            "retry": "Login"
+        }
+    }
+}

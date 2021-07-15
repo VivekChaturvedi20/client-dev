@@ -1,0 +1,134 @@
+@import "theme";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.navbar {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.page-header {
+  color: #A13382;
+}
+
+.App {
+  text-align: center;
+
+  &-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+
+  &-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+}
+
+button {
+  font-size: calc(10px + 2vmin);
+}
+
+button + button {
+    margin-left: 15px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.pull-right-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.pull-left-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.button-spacer {
+  width: 8px;
+}
+
+.link-button {
+  padding: 0px;
+}
+
+.app-loader {
+  position: absolute;
+  background-color: rgba(0, 0, 0, .1);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  top: 0;
+}
+
+.app-loader-button {
+  width: 0px !important;
+  height: 0px !important;
+  opacity: 0;
+}
+
+.form-label {
+  margin: 20px 0px 10px 0px;
+
+  &-required {
+    &:after {
+    content:" *";
+    color: red;
+    }
+  }
+}
+
+.error-message {
+  color: red;
+}
+
+.input-error {
+  border: 1px solid red;
+}
+
+.modal-dialog {
+  max-width: 600px !important;
+}
